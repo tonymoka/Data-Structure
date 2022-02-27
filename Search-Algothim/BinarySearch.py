@@ -9,10 +9,10 @@
 
 def BinarySearch(arr,l,r,x):
     if r >= l:
-        mid = l + (r-1)//2
+        mid = l + (r-l)//2
     if arr[mid]== x:
         return mid
-        
+
     if arr[mid] > x:
         BinarySearch(arr,l,mid-1,x)
     if arr[mid] < x:
